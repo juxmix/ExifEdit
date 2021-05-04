@@ -73,7 +73,7 @@ class MainWindow:
                     im = Image.open(imgFullName)
                     im = im.resize((self._iconWidth, self._iconHeight), Image.ANTIALIAS)
                     tkImage = ImageTk.PhotoImage(im)
-                    btnImage = tkinter.Button(self._frmFotos, image=tkImage, width=self._iconWidth, \
+                    btnImage = tkinter.Button(self._frmFotos, image=tkImage, width=self._iconWidth,
                                               height=self._iconHeight, command=partial(self.getExifData, imgFullName))
 
                     btnImage.image = tkImage
